@@ -29,6 +29,7 @@
     "javascript-obfuscator"
   ],
   "dependencies": {
+    "combine-source-map": "^0.8.0",
     "commander": "^13.1.0",
     "fs-extra": "^11.3.0",
     "glob": "^11.0.1",
