@@ -14,8 +14,7 @@ or you can find the file at `project_root\android\app\build\generated\assets\rea
 ## Installation
 
 ```bash
- npm i -D obfuscator-io-metro-plugin
-
+  yarn add @bernhste/obfuscator-io-metro-plugin
 ```
 
 ## Docs
@@ -42,6 +41,8 @@ const jsoMetroPlugin = require("obfuscator-io-metro-plugin")(
   {
     runInDev: false /* optional */,
     logObfuscatedFiles: true /* optional generated files will be located at ./.jso */,
+    exclude: [/^\.\//],  /* optional exclusion regex list*/,
+    include: [/^src\/ctfScreen\/secretAlgorithm\//], //* optional inclusion regex list */,
   }
 );
 
